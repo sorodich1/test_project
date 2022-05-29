@@ -1,19 +1,18 @@
 ﻿using System.Diagnostics;
+using System.Reflection;
 
 namespace test_project
 {
-    public abstract class Inicialisation
+    abstract class Inicialisation
     {
         public string One;
         public int Age;
-        public double Gh;
-        public bool Rt;
-        public Inicialisation()
+        public double Money;
+        public Inicialisation(string one, int age, double money)
         {
-            One = "One";
-            Age = 8;
-            Gh = 8.5;
-            Rt = true;
+            One = one;
+            Age = age;
+            Money = money;
         }
         public abstract void Abstract();
     }
@@ -52,39 +51,43 @@ namespace test_project
                 File.AppendAllText(@"E:\stats.txt", pair.Item2 + " " + pair.Item1 + Environment.NewLine);
             }
         }
-        static public void Main()
+        static public void Main(string[] args)
         {
-            Console.WriteLine("Основной поток запущен");
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
-            Console.WriteLine("Анализ текста запущен паралельно");
-            Task task = new Task(Analises);
-            task.Start();
-            stopwatch.Stop();
-            Console.WriteLine(stopwatch.ElapsedMilliseconds);
-            for (int i = 0; i < 60; i++)
-            {
-                Console.Write(".");
-                Thread.Sleep(100);
-            }
-            Console.WriteLine("\r\nНажмите любую клавишу для продолжения");
-            GC.Collect();
-            Console.Read();
-            
+            //Console.WriteLine("Основной поток запущен");
+            //Stopwatch stopwatch = new Stopwatch();
+            //stopwatch.Start();
+            //Console.WriteLine("Анализ текста запущен паралельно");
+            //Task task = new Task(Analises);
+            //task.Start();
+            //stopwatch.Stop();
+            //Console.WriteLine(stopwatch.ElapsedMilliseconds);
+            //for (int i = 0; i < 60; i++)
+            //{
+            //    Console.Write(".");
+            //    Thread.Sleep(100);
+            //}
+            //Console.WriteLine("\r\nНажмите любую клавишу для продолжения");
+            //GC.Collect();
+            //Console.Read();
 
-            Console.WriteLine("Анализ текста запущен однопоточно");
-            stopwatch.Start();
-            Program program = new Program();
-            Program.Analises();
-            stopwatch.Stop();
-            Console.WriteLine(stopwatch.ElapsedMilliseconds);
-            for (int i = 0; i < 60; i++)
-            {
-                Console.Write(".");
-                Thread.Sleep(100);
-            }
-            Console.WriteLine("\r\nРабота программы завершена");
-            Console.ReadLine();
+
+            //Console.WriteLine("Анализ текста запущен однопоточно");
+            //stopwatch.Start();
+            //Program program = new Program();
+            //Program.Analises();
+            //stopwatch.Stop();
+            //Console.WriteLine(stopwatch.ElapsedMilliseconds);
+            //for (int i = 0; i < 60; i++)
+            //{
+            //    Console.Write(".");
+            //    Thread.Sleep(100);
+            //}
+            //Console.WriteLine("\r\nРабота программы завершена");
+            //Console.ReadLine();
+
+            Type type = typeof(Inicialisation);
+            ConstructorInfo? info = type.GetConstructor(new Type[] { typeof(string), typeof(int), typeof(double) });
+            object inicialisation = info.Invoke(new object[] { "Test", 20, 25.5  });
         }
     }
 }
