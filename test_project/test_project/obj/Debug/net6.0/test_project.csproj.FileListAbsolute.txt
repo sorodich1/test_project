@@ -1,0 +1,15 @@
+F:\Git\test_project\test_project\test_project\bin\Debug\net6.0\test_project.exe
+F:\Git\test_project\test_project\test_project\bin\Debug\net6.0\test_project.deps.json
+F:\Git\test_project\test_project\test_project\bin\Debug\net6.0\test_project.runtimeconfig.json
+F:\Git\test_project\test_project\test_project\bin\Debug\net6.0\test_project.dll
+F:\Git\test_project\test_project\test_project\bin\Debug\net6.0\test_project.pdb
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.csproj.AssemblyReference.cache
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.GeneratedMSBuildEditorConfig.editorconfig
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.AssemblyInfoInputs.cache
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.AssemblyInfo.cs
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.csproj.CoreCompileInputs.cache
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.dll
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\refint\test_project.dll
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.pdb
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\test_project.genruntimeconfig.cache
+F:\Git\test_project\test_project\test_project\obj\Debug\net6.0\ref\test_project.dll
