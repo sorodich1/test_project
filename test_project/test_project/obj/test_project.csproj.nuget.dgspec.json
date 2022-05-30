@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Git\\test_project\\test_project\\test_project\\test_project.csproj": {}
+    "E:\\test\\test_project\\test_project\\test_project\\test_project.csproj": {}
   },
   "projects": {
-    "F:\\Git\\test_project\\test_project\\test_project\\test_project.csproj": {
+    "E:\\test\\test_project\\test_project\\test_project\\test_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Git\\test_project\\test_project\\test_project\\test_project.csproj",
+        "projectUniqueName": "E:\\test\\test_project\\test_project\\test_project\\test_project.csproj",
         "projectName": "test_project",
-        "projectPath": "F:\\Git\\test_project\\test_project\\test_project\\test_project.csproj",
-        "packagesPath": "C:\\Users\\sorod\\.nuget\\packages\\",
-        "outputPath": "F:\\Git\\test_project\\test_project\\test_project\\obj\\",
+        "projectPath": "E:\\test\\test_project\\test_project\\test_project\\test_project.csproj",
+        "packagesPath": "C:\\Users\\kotov_ui\\.nuget\\packages\\",
+        "outputPath": "E:\\test\\test_project\\test_project\\test_project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sorod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kotov_ui\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
